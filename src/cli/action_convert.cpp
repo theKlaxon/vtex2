@@ -104,6 +104,7 @@ const OptionList& ActionConvert::get_options() const {
 					"rgba32323232f",
 					"ati2n",
 					"ati1n",
+					"bc6h",
 					"bc7",
 				})
 				.help("Image format of the VTF"));

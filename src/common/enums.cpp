@@ -73,6 +73,8 @@ VTFImageFormat ImageFormatFromString(const char* arg) {
 		return IMAGE_FORMAT_ATI2N;
 	else if (str::strcasecmp("IMAGE_FORMAT_ATI1N", arg) == 0)
 		return IMAGE_FORMAT_ATI1N;
+	else if (str::strcasecmp("IMAGE_FORMAT_BC6H", arg) == 0)
+		return IMAGE_FORMAT_BC6H;
 	else if (str::strcasecmp("IMAGE_FORMAT_BC7", arg) == 0)
 		return IMAGE_FORMAT_BC7;
 	else if (str::strcasecmp("IMAGE_FORMAT_COUNT", arg) == 0)
@@ -253,6 +255,8 @@ VTFImageFormat ImageFormatFromUserString(const char* arg) {
 		return IMAGE_FORMAT_ATI2N;
 	else if (str::strcasecmp("ATI1N", arg) == 0)
 		return IMAGE_FORMAT_ATI1N;
+	else if (str::strcasecmp("BC6H", arg) == 0)
+		return IMAGE_FORMAT_BC6H;
 	else if (str::strcasecmp("BC7", arg) == 0)
 		return IMAGE_FORMAT_BC7;
 	else if (str::strcasecmp("COUNT", arg) == 0)
